@@ -41,7 +41,7 @@ namespace Asassignment
                 case 1: status = "very weak password, please try again";  break;
                 case 2: status = "weak password, please try again";  break;
                 case 3: status = "medium strength, please try again"; break;
-                case 4:  status = "fairy strong password, please try again";  break;
+                case 4:  status = "fairly strong password, please try again";  break;
                 case 5:   status = "good"; break;
                 default:  break;
             }

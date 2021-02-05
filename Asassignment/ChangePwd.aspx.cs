@@ -99,19 +99,19 @@ namespace Asassignment
             tmp =  vv.checkPwdStrength(tb_newpwd.Text);
             ss = tmp.Split(';');
             if (ss[1].Equals("false"))  { msg2.Text = ss[0];  msg2.ForeColor = Color.Red; return; }
-            msg2.Text = ss[0];
+            msg2.Text = "good password";
             msg2.ForeColor = Color.Green;
 
             tmp = uu.validatePassword(userid, tb_pwd.Text);
             ss = tmp.Split(';');
             if (!ss[1].Equals("true")) { msg1.Text = "incorrect password"; msg1.ForeColor = Color.Red; return; }
-            msg1.Text = ss[0];
+            msg1.Text = "Password matched, good";
             msg1.ForeColor = Color.Green;
 
             tmp = NewPwdExist(userid, tb_newpwd.Text);
             ss = tmp.Split(';');
             if (ss[1].Equals("true")) { 
-                msg2.Text = ss[0]; 
+                msg2.Text = "matched an existing password!"; 
                 pwderror.Text = "Password already exists, please retry";
                 pwderror.ForeColor = Color.Red;
                 msg2.ForeColor = Color.Red;
