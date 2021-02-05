@@ -104,7 +104,7 @@ namespace Asassignment
 
             tmp = uu.validatePassword(userid, tb_pwd.Text);
             ss = tmp.Split(';');
-            if (!ss[1].Equals("true")) { msg1.Text = ss[0]; msg1.ForeColor = Color.Red; return; }
+            if (!ss[1].Equals("true")) { msg1.Text = "incorrect password"; msg1.ForeColor = Color.Red; return; }
             msg1.Text = ss[0];
             msg1.ForeColor = Color.Green;
 
