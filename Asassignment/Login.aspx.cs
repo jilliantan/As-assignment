@@ -167,7 +167,7 @@ namespace Asassignment
                 }
 
             }
-            catch (Exception ex) { msg1.Text = ex.ToString(); throw new Exception(ex.ToString()); }
+            catch (Exception ex) { throw new Exception(ex.ToString()); }
             finally { }
         }
 
